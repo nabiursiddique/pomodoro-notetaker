@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
     return (
         <div>
@@ -10,18 +12,18 @@ const Navbar = () => {
                         <ul
                             tabIndex={-1}
                             className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            <li><a>Pomodoro Timer</a></li>
-                            <li><a>Note Taker</a></li>
-                            <li><a>Schedule</a></li>
+                            <li> <Link to='/'>Pomodoro Timer</Link></li>
+                            <li><Link to='/note'>Note Taker</Link></li>
+                            <li><Link to='/schedule'>Schedule</Link></li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-2xl">Pomodoro NoteTaker</a>
+                    <a className="btn btn-ghost text-2xl font-bold">Pomodoro NoteTaker</a>
                 </div>
                 <div className="navbar-end hidden lg:flex">
                     <ul className="menu menu-horizontal px-1">
-                        <li><a>Pomodoro Timer</a></li>
-                        <li><a>Note Taker</a></li>
-                        <li><a>Schedule</a></li>
+                        <li><Link to='/'>Pomodoro Timer</Link></li>
+                        <li><Link to='/note'>Note Taker</Link></li>
+                        <li><Link to='/schedule'>Schedule</Link></li>
                     </ul>
                 </div>
             </div>
