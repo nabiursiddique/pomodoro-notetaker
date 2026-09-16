@@ -1,9 +1,12 @@
+import Navbar from "./components/Navbar/Navbar"
+
 function App() {
 
   return (
     <>
-      <div className="text-6xl">Hello world</div>
-      <button className="btn btn-xl">Xlarge</button>
+      <div>
+        <Navbar />
+      </div>
     </>
   )
 }
